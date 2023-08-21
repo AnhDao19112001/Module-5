@@ -16,19 +16,26 @@ class AppTodo extends Component {
     }
 
     handleAddItem = () => {
-        this.setState({
-            textList: [...this.state.textList, this.state.textField],
-            textField: ""
-        })
+        if(this.state.textField !== ""){
+
+           const newList = [...this.state.textList, this.state.textField]
+                this.setState(() => ({textList: newList, textField: "" })
+                )
+        }
+
+
+
     }
 
     render() {
         return (
             <>
-                <h1>To do List</h1>
-                <input type='text' value={this.state.textField}
-                       onChange={(event) => this.handleChange(event.target.value)}/>
-                <button onClick={() => this.handleAddItem()}>Add</button>
+                <h1 style={{textAlign: "center"}}>To do List</h1>
+                <input className="form-control"
+                    type='text' value={this.state.textField}
+                       onChange={(event) => this.handleChange(event.target.value)} />
+                <button className="btn btn-primary mb-3"
+                    onClick={() => this.handleAddItem()}>Add</button>
                 <ul>
                     {
                         this.state.textList.map((element, index) => {
