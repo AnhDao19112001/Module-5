@@ -1,31 +1,32 @@
-import {useState} from "react";
+import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
-function Counter() {
-    const [count, setCount] = useState(0);
-    const [count1, setCount1] = useState(0);
-    const handleIncrease1 = () => {
-        const newValue1 = count + 1;
-        setCount(newValue1);
-    };
+function useCounter(originalNumber,step){
+    const [count, setCount] = React.useState(originalNumber);
 
-    const handleIncrease2 = () => {
-        const newValue2 = count1 + 2;
-        setCount1(newValue2);
+    const increment = () => {
+        setCount(count + step)
     }
+    return(
+        [count, increment]
+    )
+}
+function Counter() {
+    const [count1, setCount1] = useCounter(0,1);
+    const [count2, setCount2] = useCounter(0,2);
 
     return (
         <>
             <div className="form-control">
 
                 <div>
-                    <button className="btn btn-primary" onClick={handleIncrease1}>Add 1</button>
-                    Value 1 = {count}
+                    <button className="btn btn-primary" onClick={setCount1}>Add 1</button>
+                    Value 1 = {count1}
                 </div>
                 <br/>
 
                 <div>
-                    <button className="btn btn-primary" onClick={handleIncrease2}>Add 2</button>
-                    Value 2 = {count1}
+                    <button className="btn btn-primary" onClick={setCount2}>Add 2</button>
+                    Value 2 = {count2}
                 </div>
             </div>
         </>
