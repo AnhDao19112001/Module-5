@@ -6,12 +6,12 @@ import {toast, ToastContainer} from "react-toastify";
 import {Button, Modal} from "bootstrap";
 
 export function ManagerBook() {
-    const [book, setBook] = useState([])
+    const [books, setBooks] = useState([])
     useEffect(() => {
         const getAll = async () => {
             try {
                 const result = await service.getAll()
-                setBook(result)
+                setBooks(result)
             } catch (error) {
                 console.log('error')
             }
@@ -38,10 +38,10 @@ export function ManagerBook() {
     const handleDelete = async (id) => {
         try {
             await service.deleteBook(id);
-            setBook(await service.getAll())
-            toast(`Delete ${book.title} success!`)
+            setBooks(await service.getAll())
+            toast(`Delete ${books.title} success!`)
         } catch (error) {
-            toast(`Delete ${book.title} fail!`)
+            toast(`Delete ${books.title} fail!`)
         }
     }
 
@@ -60,7 +60,7 @@ export function ManagerBook() {
                     </tr>
                     </thead>
                     <tbody>
-                    {book.map((value, key) => (
+                    {books.map((value, key) => (
                         <tr key={key}>
                             <td>{value.title}</td>
                             <td>{value.quantity}</td>
