@@ -13,7 +13,7 @@ export function UpdateManageBook() {
             const result = await service.getById(param.id)
             setBook(result);
         }
-        getBookId()
+        getBookId();
     }, [param.id])
     if (!book) {
         return null;
@@ -29,7 +29,7 @@ export function UpdateManageBook() {
                         const update = async () => {
                             console.log(values)
                             try {
-                                await service.updateBook(values, param.id)
+                                await service.updateBook(values,values.id)
                                 toast(`Update success!`)
                                 navigate("/")
                             } catch (error) {

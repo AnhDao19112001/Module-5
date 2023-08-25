@@ -29,7 +29,7 @@ export const getById = async (id) =>{
 
 export const updateBook = async (books, id) => {
     try {
-        await axios.put(`http://localhost:8081/book/{id}`, books)
+        await axios.put(`http://localhost:8081/book/${id}`, books)
     } catch (error) {
 
     }
@@ -37,7 +37,7 @@ export const updateBook = async (books, id) => {
 
 export const deleteBook = async (id) => {
     try {
-        await axios.delete(`http://localhost:8081/book/{id}`)
+        await axios.delete(`http://localhost:8081/book/${id}`)
     }catch (error){
 
     }
