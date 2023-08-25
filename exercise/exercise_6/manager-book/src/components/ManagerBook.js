@@ -49,7 +49,7 @@ export function ManagerBook() {
         <>
             <div className='container'>
                 <h1 style={{textAlign: 'center'}}>Library</h1>
-                <button className="btn btn-primary btn-add"><NavLink to={'/add'} className='nav-link'>Create</NavLink>
+                <button className="btn btn-primary btn-add" style={{float: 'right'}}><NavLink to={'/add'} className='nav-link'>Create</NavLink>
                 </button>
                 <table className='table'>
                     <thead>
@@ -65,8 +65,8 @@ export function ManagerBook() {
                             <td>{value.title}</td>
                             <td>{value.quantity}</td>
                             <td>
-                                <button>
-                                    <NavLink className='nav-link' to={`/update/${value.id}`}> Chỉnh sửa</NavLink>
+                                <button type={'button'} className={'btn btn-warning'}>
+                                    <NavLink className='nav-link' to={`/update/${value.id}`}>Update</NavLink>
                                 </button>
                             </td>
                             <td>
