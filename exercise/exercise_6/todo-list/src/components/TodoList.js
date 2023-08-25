@@ -11,7 +11,7 @@ function TodoList() {
     }, [])
     const getAlls = async () => {
         const result = await todoService.getAll();
-        setTodo((prev) => result);
+        setTodo(result);
     }
     const handleSubmit = (value) => {
         console.log(value);

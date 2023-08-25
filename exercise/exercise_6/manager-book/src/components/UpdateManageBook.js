@@ -6,24 +6,24 @@ import * as service from "../service/BookManagerService";
 
 export function UpdateManageBook() {
     let param = useParams()
-    const [book, setBook] = useState();
+    const [bookList, setBookList] = useState();
     const navigate = useNavigate()
     useEffect(() => {
         const getBookId = async () => {
             const result = await service.getById(param.id)
-            setBook(result);
+            setBookList(result);
         }
         getBookId();
     }, [param.id])
-    if (!book) {
+    if (!bookList) {
         return null;
     }
     return (
         <>
             <Formik initialValues={{
-                id: book?.id,
-                title: book?.title,
-                quantity: book?.quantity
+                id: bookList?.id,
+                title: bookList?.title,
+                quantity: bookList?.quantity
             }}
                     onSubmit={(values) => {
                         const update = async () => {
