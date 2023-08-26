@@ -1,11 +1,6 @@
 {
   "books": [
     {
-      "title": "anh",
-      "quantity": 1911,
-      "id": 9
-    },
-    {
       "title": "abc",
       "quantity": 123456,
       "id": 11
@@ -21,9 +16,14 @@
       "id": 14
     },
     {
-      "title": "Anh Dao",
-      "quantity": 10000000,
-      "id": 15
+      "id": 15,
+      "title": "Anh Tin",
+      "quantity": 10000
+    },
+    {
+      "title": "anh huy",
+      "quantity": 200000,
+      "id": 16
     }
   ]
 }

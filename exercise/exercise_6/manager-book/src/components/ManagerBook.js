@@ -3,6 +3,7 @@ import * as service from "../service/BookManagerService";
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {toast, ToastContainer} from "react-toastify";
+
 import {Button, Modal} from "bootstrap";
 
 export function ManagerBook() {
@@ -12,6 +13,7 @@ export function ManagerBook() {
             try {
                 const result = await service.getAll()
                 setBookList(result)
+                console.log(result);
             } catch (error) {
                 console.log('error')
             }
@@ -49,7 +51,8 @@ export function ManagerBook() {
         <>
             <div className='container'>
                 <h1 style={{textAlign: 'center'}}>Library</h1>
-                <button className="btn btn-primary btn-add" style={{float: 'right'}}><NavLink to={'/add'} className='nav-link'>Create</NavLink>
+                <button className="btn btn-primary btn-add" style={{float: 'right'}}><NavLink to={'/add'}
+                                                                                              className='nav-link'>Create</NavLink>
                 </button>
                 <table className='table'>
                     <thead>
@@ -70,7 +73,8 @@ export function ManagerBook() {
                                 </button>
                             </td>
                             <td>
-                                <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal"
                                         onClick={() => deleteButton(value)}>Delete
                                 </button>
                             </td>
@@ -95,7 +99,8 @@ export function ManagerBook() {
                                 <button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Close
                                 </button>
                                 <button type="button" className="btn btn-danger" data-bs-dismiss="modal"
-                                        onClick={() => handleDelete(object.id)}>Delete</button>
+                                        onClick={() => handleDelete(object.id)}>Delete
+                                </button>
                             </div>
                         </div>
                     </div>
