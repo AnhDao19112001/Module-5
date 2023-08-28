@@ -1,23 +1,21 @@
-import {GET_LIST_POST, GET_LIST_POST_SUCCESS} from "../constant";
+import {DELETE_USER_SUCCESS, FETCH_USER_SUCCESS} from "./Action";
 
-let INITIAL_STATE;
-const postsReducer = (state = INITIAL_STATE, action) => {
-    switch(action.type) {
-        case GET_LIST_POST:
+
+const initialState = {
+    users: [],
+};
+const rootReducer = (state = initialState, action) => {
+    console.log(action);
+    switch (action.type) {
+        case FETCH_USER_SUCCESS:
+            return { ...state, users: [...action.payload] };
+        case DELETE_USER_SUCCESS:
             return {
                 ...state,
-                load: true,
-            };
-        case GET_LIST_POST_SUCCESS:
-            const {data} = action.payload;
-            return {
-                ...state,
-                posts: data,
-                load: false,
+                users: state.users.map((user) => user.id !== action.payload),
             };
         default:
             return state;
     }
-}
-
-export default postsReducer;
+};
+export default rootReducer;
