@@ -3,7 +3,6 @@ import * as service from "../service/BookManagerService";
 import React from "react";
 import {NavLink} from "react-router-dom";
 import {toast, ToastContainer} from "react-toastify";
-
 import {Button, Modal} from "bootstrap";
 
 export function ManagerBook() {
