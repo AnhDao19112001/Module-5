@@ -1,0 +1,70 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "AnhDaoThien",
+      "dob": "2023-08-16",
+      "address": "Quang Nam"
+    },
+    {
+      "id": 2,
+      "name": "Anh Dao",
+      "dob": "19-11-2001",
+      "address": "Quang Nam"
+    },
+    {
+      "id": 3,
+      "name": "Anh Dao",
+      "dob": "19-11-2001",
+      "address": "Quang Nam"
+    },
+    {
+      "id": 4,
+      "name": "Anh Dao",
+      "dob": "19-11-2001",
+      "address": "Quang Nam"
+    },
+    {
+      "id": 5,
+      "name": "khaikhung",
+      "dob": "2000-01-29",
+      "address": "280 Trần Hưng Đạo"
+    },
+    {
+      "name": "abc",
+      "dob": "2023-08-29",
+      "address": "280 Trần Hưng Đạo",
+      "id": 6
+    },
+    {
+      "name": "dưa leo",
+      "dob": "2023-08-29",
+      "address": "280 Trần Hưng Đạo",
+      "id": 7
+    },
+    {
+      "name": "Thanh Thiện",
+      "dob": "2023-08-31",
+      "address": "Quảng Nam",
+      "id": 8
+    },
+    {
+      "name": "Anh Đào",
+      "dob": "2023-08-29",
+      "address": "280 Trần Hưng Đạo",
+      "id": 9
+    },
+    {
+      "name": "Tá Anh Đào",
+      "dob": "2001-11-19",
+      "address": "Quảng Nam",
+      "id": 10
+    },
+    {
+      "name": "Anh Phát",
+      "dob": "2023-08-29",
+      "address": "Quảng Nam",
+      "id": 11
+    }
+  ]
+}
