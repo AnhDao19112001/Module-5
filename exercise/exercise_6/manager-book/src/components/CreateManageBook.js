@@ -7,8 +7,6 @@ import {toast} from "react-toastify";
 export function CreateManageBook() {
     const navigate = useNavigate()
     return (
-
-
         <Formik initialValues={{
             title: '',
             quantity: '',

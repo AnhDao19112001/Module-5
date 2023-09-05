@@ -1,0 +1,39 @@
+{
+  "customers": [
+    {
+      "id": 2,
+      "title": "Etanol",
+      "idType": 3,
+      "price": "5000",
+      "describe": "Vip"
+    },
+    {
+      "id": 3,
+      "title": "Whisky",
+      "idType": 2,
+      "price": "1200000",
+      "describe": "Vippro"
+    },
+    {
+      "title": "Anhdao",
+      "price": 12000,
+      "describe": "mới",
+      "idType": "3",
+      "id": 4
+    }
+  ],
+  "customerType": [
+    {
+      "idType": 1,
+      "name": "Beer"
+    },
+    {
+      "idType": 2,
+      "name": "Ruou"
+    },
+    {
+      "idType": 3,
+      "name": "Thuc uong len men"
+    }
+  ]
+}

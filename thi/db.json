@@ -1,0 +1,102 @@
+{
+  "productList": [
+    {
+      "id": 1,
+      "name": "bad",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 1
+    },
+    {
+      "id": 2,
+      "name": "Larue",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 2
+    },
+    {
+      "id": 3,
+      "name": "Tiger",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 3
+    },
+    {
+      "id": 4,
+      "name": "333",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 1
+    },
+    {
+      "id": 5,
+      "name": "SaiGon",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 2
+    },
+    {
+      "id": 6,
+      "name": "Swim here",
+      "price": "20000",
+      "detail": "Good Job",
+      "idType": 3
+    },
+    {
+      "name": "abc",
+      "price": 15000,
+      "detail": "ngon",
+      "idType": "2",
+      "id": 7
+    },
+    {
+      "name": "Thanh Thien",
+      "price": 20000,
+      "detail": "do",
+      "idType": "3",
+      "id": 8
+    },
+    {
+      "name": "dua leo",
+      "price": 10000,
+      "detail": "ngon",
+      "idType": "3",
+      "id": 9
+    },
+    {
+      "name": "Thien ngoo",
+      "price": 20000,
+      "detail": "ngoo",
+      "idType": "2",
+      "id": 10
+    },
+    {
+      "name": "dưa leo",
+      "price": 20000,
+      "detail": "ngon",
+      "idType": {},
+      "id": 11
+    },
+    {
+      "id": 12,
+      "name": "dưa chua 1",
+      "price": 34444,
+      "detail": "git",
+      "idType": {}
+    }
+  ],
+  "productType": [
+    {
+      "id": 1,
+      "name": "beer"
+    },
+    {
+      "id": 2,
+      "name": "barley drink"
+    },
+    {
+      "id": 3,
+      "name": "fermented barley"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Quần dài",
+      "date": "19-11-2001",
+      "quantity": 10,
+      "idType": "1"
+    },
+    {
+      "id": 2,
+      "name": "Quần",
+      "date": "05-09-2023",
+      "quantity": "5",
+      "idType": 1
+    },
+    {
+      "id": 3,
+      "name": "Giày",
+      "date": "05-09-2023",
+      "quantity": "5",
+      "idType": 2
+    },
+    {
+      "id": 4,
+      "name": "Dép",
+      "date": "05-09-2023",
+      "quantity": "5",
+      "idType": 2
+    },
+    {
+      "id": 5,
+      "name": "Mủ tai bèo",
+      "date": "05-09-2023",
+      "quantity": "5",
+      "idType": 3
+    }
+  ],
+  "TypeProduct": [
+    {
+      "idType": 1,
+      "name": "Áo quần"
+    },
+    {
+      "idType": 2,
+      "name": "Giày dép"
+    },
+    {
+      "idType": 3,
+      "name": "Mủ nón"
+    }
+  ]
+}

@@ -74,7 +74,7 @@ export function ManagerBook() {
                             <td>
                                 <button type="button" className="btn btn-danger btn-modal" data-bs-toggle="modal"
                                         data-bs-target="#exampleModal"
-                                        onClick={() => deleteButton(value)}>Delete
+                                        onClick={() => deleteButton(<value className="id"></value>)}>Delete
                                 </button>
                             </td>
                         </tr>
