@@ -17,23 +17,29 @@ public class ProductService implements IProductService {
     private IProductRepository iProductRepository;
 
     @Override
-    public List<Product> findAll() {
-        return iProductRepository.getAll();
+    public Page<Product> findAll(Pageable pageable) {
+        return iProductRepository.getAll(pageable);
     }
 
     @Override
-    public Page<Product> getAllProduct(String searchByName, String searchByNameType, Pageable pageable) {
-        return iProductRepository.findAll(searchByName,searchByNameType,pageable);
+    public void create(Product product) {
+        iProductRepository.createProduct(product);
     }
 
     @Override
-    public Product create(Product product) {
-        return iProductRepository.save(product);
+    public void update(Integer id) {
+        iProductRepository.updateProduct(id);
     }
 
     @Override
-    public Optional<Product> findById(Integer id) {
-        return Optional.empty();
+    public void delete(Integer id) {
+        iProductRepository.deleteProduct(id);
     }
+
+    @Override
+    public List<Product> search(String name) {
+        return iProductRepository.searchProductName(name);
+    }
+
 
 }

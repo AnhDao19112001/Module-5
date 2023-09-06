@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 public interface IProductService {
-    List<Product> findAll();
-    Page<Product> getAllProduct(String searchByName, String searchByNameType, Pageable pageable);
-    Product create (Product product);
-    Optional<Product> findById (Integer id);
+
+    Page<Product> findAll(Pageable pageable);
+
+    void create (Product product);
+    void update (Integer id);
+    void delete (Integer id);
+    List<Product> search (String name);
 }
